@@ -7,6 +7,7 @@ import About from './components/About/About.jsx'
 import Contact from './components/Contact/Contact.jsx'
 import User from './components/User/User.jsx'
 import Github from './components/Github/Github.jsx'
+import Project from './components/Project/Project.jsx'
 import './index.css'
 import { createBrowserRouter, createRoutesFromElements, Router, RouterProvider, Routes,BrowserRouter } from 'react-router-dom'
 
@@ -50,12 +51,15 @@ const router=createBrowserRouter([
         path:"github",
         element:<Github />
 
+      },{
+        path:"Project",
+        element:<Project/>
       }
     ]
   }
 ])
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+
 <RouterProvider router={router}/>
-  </StrictMode>,
+ 
 )

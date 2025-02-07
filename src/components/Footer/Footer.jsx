@@ -71,7 +71,7 @@ function Footer() {
         <hr className="my-6 border-gray-200 sm:mx-auto lg:my-4" />
         <div className="sm:flex sm:items-center pb-6 sm:justify-between">
             <span className="text-sm text-gray-500 sm:text-center">
-                © 2024
+                © 2025
                 <a href="https://vishnu gurjar.com/" className="hover:underline">
                     Vishnu Gurjar
                 </a>
