@@ -1,11 +1,12 @@
 import React from 'react'
 import video1 from "../vidoes/vidoes7.mp4";
+import img from "../Header/ai.png";
 function Contact() {
   return (
     <>
-    <div className=' h-72 w-48 ml-80 items-center flex justify-center  place-content-center'> 
-    <div  className='place-content-center items-center flex justify-center '>
-        <img className='  rounded-full   ' src="../src/assets/ai.png" alt="" srcset="" />
+    <div className=' h-72 w-48 ml-80 items-center flex justify-center  r'> 
+    <div  className=' items-center flex justify-center '>
+        <img className='  rounded-full   ' src={img} alt="" srcset="" />
 
     </div>
     </div>
