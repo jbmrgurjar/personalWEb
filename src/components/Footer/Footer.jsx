@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link,NavLink } from 'react-router-dom'
 import logoo from '../vidoes/photo4.jpg'
+import img from "../Footer/ins.png";
 function Footer() {
   return (
     <footer className="bg-white border-y">
@@ -78,10 +79,10 @@ function Footer() {
                 . All Rights Reserved.
             </span>
             <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
-                <Link to="#" className="text-gray-500 hover:text-gray-900">
+                <Link to="https://www.instagram.com/b.tech_coding_wallah" className="text-gray-500 hover:text-gray-900">
                 <a href="https://www.instagram.com/b.tech_coding_wallah/"/> <img className="  w-4 h-4 "
             alt="component"
-            src="../src/assets/download.jpeg"/></Link>
+            src={img}/></Link>
                     <span className="sr-only">instagram</span>
                 
                 <Link to="#" className="text-gray-500">
@@ -112,7 +113,7 @@ function Footer() {
                     </svg>
                     <span className="sr-only">Twitter page</span>
                 </Link>
-                <Link to="#" className="text-gray-500">
+                <Link to="https://github.com/jbmrgurjar" className="text-gray-500">
                     <svg
                         className="w-4 h-4"
                         aria-hidden="true"

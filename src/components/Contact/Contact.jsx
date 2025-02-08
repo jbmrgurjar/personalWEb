@@ -4,8 +4,8 @@ import img from "../Header/ai.png";
 function Contact() {
   return (
     <>
-    <div className=' h-72 w-48 ml-80 items-center flex justify-center  r'> 
-    <div  className=' items-center flex justify-center '>
+    <div className=' h-96 w-48 ml-80 items-center flex justify-center  place-content-center'> 
+    <div  className='place-content-center items-center flex justify-center '>
         <img className='  rounded-full   ' src={img} alt="" srcset="" />
 
     </div>
@@ -149,7 +149,7 @@ function Contact() {
             
         </div>
         <div className="relative h-screen ">
-        <div className=" w-2/5 h-1/2 absolute top-60 right-11  ">
+        <div className=" w-2/5 h-1/2 absolute top-48 right-11  ">
           <video className="rounded-3xl" src={video1} autoPlay loop muted />
         </div>
         <div className=" flex items-start justify-start">
