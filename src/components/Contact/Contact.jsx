@@ -4,7 +4,7 @@ function Contact() {
   return (
     <>
     <div className=' h-72 w-48 ml-80 items-center flex justify-center  place-content-center'> 
-    <div  className='place-content-center'>
+    <div  className='place-content-center items-center flex justify-center '>
         <img className='  rounded-full   ' src="../src/assets/ai.png" alt="" srcset="" />
 
     </div>

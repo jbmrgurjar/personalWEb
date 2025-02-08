@@ -1,7 +1,10 @@
 import React from "react";
+import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-
+import { Menu, X } from "lucide-react";
 function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header className="shadow sticky z-50 top-0">
       <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5">
@@ -9,6 +12,25 @@ function Header() {
           <Link to="/" className="flex items-center">
             <h1 className="text-4xl font-mono font-bold text-cyan-950">VISHNU GURJAR</h1>
           </Link>
+          <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="md:hidden text-black focus:outline-none"
+        >
+          {isOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
+        <ul
+          className={`absolute md:static top-16 right w-full md:w-auto bg-white md:bg-transparent flex flex-col md:flex-row md:space-x-6 p-4 md:p-0 transition-all ${
+            isOpen ? "block" : "hidden"
+          }`}
+        >
+         <li className="py-2"><a href="/" className="hover:text-black-300">Home</a></li>
+         <li className="py-2"><a href="/about" className="hover:text-black-300">About</a></li>
+          <li className="py-2"><a href="/contact" className="hover:text-black-300">Contact</a></li>
+          <li className="py-2"><a href="/github" className="hover:text-black-300">Github</a></li>
+          <li className="py-2"><a href="/project" className="hover:text-black-300">Project</a></li>
+        </ul>
+
+
           <div className="flex items-center lg:order-2">
             <Link
               to="#"
