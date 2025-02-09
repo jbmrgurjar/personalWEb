@@ -7,7 +7,7 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="shadow sticky z-50 top-0">
+    <header className="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; sticky z-50 top-0">
       <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <Link to="/" className="flex items-center">
@@ -19,8 +19,9 @@ function Header() {
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
-        <ul
-          className={`absolute md:static top-16 right w-full md:w-auto bg-white md:bg-transparent flex flex-col md:flex-row md:space-x-6 p-4 md:p-0 transition-all ${
+        
+        <ul 
+          className={`absolute md:static top-24  right w-96 md:w-auto bg-lime-200  hover:to-blue-600 md:bg-transparent flex flex-col md:flex-row md:space-x-6 p-4 md:p-0 transition-all ${
             isOpen ? "block" : "hidden"
           }`}
         >

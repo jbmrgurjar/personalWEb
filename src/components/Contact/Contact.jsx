@@ -1,29 +1,31 @@
-import React from 'react'
+import React from 'react';
 import video1 from "../vidoes/vidoes7.mp4";
 import img from "../Header/ai.png";
+
 function Contact() {
   return (
     <>
-    <div className=' h-96 w-48 ml-80 items-center flex justify-center  place-content-center'> 
+
+<div className=' h-40 w-36 ml-56 items-center flex justify-center  place-content-center'> 
     <div  className='place-content-center items-center flex justify-center '>
         <img className='  rounded-full   ' src={img} alt="" srcset="" />
 
     </div>
     </div>
-   <div className="relative flex items-top justify-center h-[200px] bg-white sm:items-center sm:pt-0">
-            <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
-                <div className="mt-8 overflow-hidden">
-                    <div className="grid grid-cols-1 md:grid-cols-2">
-                        <div className="p-6 mr-2 bg-gray-100 sm:rounded-lg">
-                            <h1 className="text-3xl sm:text-4xl text-gray-800 font-extrabold tracking-tight">
-                                Get in touch: 
-                            </h1>
-                            <p className="text-normal text-lg sm:text-xl font-medium text-gray-600 mt-2">
-                                Fill in the form to start a conversation
-                            </p>
+      <div className='mx-auto max-w-screen-md'>
+        <div className='grid grid-cols-1 md:grid-cols-2'>
+          <div className='p-6 mr-2 bg-gray-100 sm:rounded-lg'>
+            <h1 className='text-3xl sm:text-4xl text-gray-800 font-extrabold tracking-tight'>
+              Get in touch:
+            </h1>
+            <p className='text-normal text-lg sm:text-xl font-medium text-gray-600 mt-2'>
+              Fill in the form to start a conversation
+            </p>
 
-                            <div className="flex items-center mt-8 text-gray-600">
-                                <svg
+          
+            <div className='flex items-center mt-8 text-gray-600'>
+          
+              <svg
                                     fill="none"
                                     stroke="currentColor"
                                     stroke-linecap="round"
@@ -48,9 +50,9 @@ function Contact() {
                                 <div className="ml-4 text-md tracking-wide font-semibold w-40">
                                     Gwalior(M.P)
                                 </div>
-                            </div>
-
-                            <div className="flex items-center mt-4 text-gray-600">
+                            
+            </div>  
+             <div className="flex items-center mt-4 text-gray-600">
                                 <svg
                                     fill="none"
                                     stroke="currentColor"
@@ -68,7 +70,7 @@ function Contact() {
                                     />
                                 </svg>
                                 <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                                    +91 9301390094
+                                    +91 9301390095
                                 </div>
                             </div>
 
@@ -90,13 +92,18 @@ function Contact() {
                                     />
                                 </svg>
                                 <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                                gurjarvishnu585@gmail.com
+                                gurjarvishnu740@gmail.com
                                 </div>
-                            </div>
+                            
                         </div>
 
-                        <form className="p-6 flex flex-col justify-center">
-                            <div className="flex flex-col">
+
+
+            {/* Repeat for other contact information */}
+
+           
+            <form className='p-6 flex flex-col justify-center'>
+            <div className="flex flex-col">
                                 <label for="name" className="hidden">
                                     Full Name
                                 </label>
@@ -141,35 +148,25 @@ function Contact() {
                             >
                                 Submit
                             </button>
-                        </form>
-                    </div>
-                </div>
-                
+            </form>
+          </div>
+
+          <div className='relative h-screen'>
+            <div className='absolute top-48 right-11 md:w-4/5 md:h-1/2'>
+              <video className='rounded-3xl' src={video1} autoPlay loop muted />
             </div>
-            
-        </div>
-        <div className="relative h-screen ">
-        <div className=" w-2/5 h-1/2 absolute top-48 right-11  ">
-          <video className="rounded-3xl" src={video1} autoPlay loop muted />
-        </div>
-        <div className=" flex items-start justify-start">
-          <div className="mt-80  ml-6">
-           
-            <p className="mt-8  text-cyan-500 text-2xl font-semibold">
-            
-  We're here to help! If you have any questions
-    <br /> 
-  or need assistance, please don't hesitate to reach out. 
-  
-
-
-            </p>
+            <div className='flex items-start justify-start'>
+              <div className='mt-8 md:mt-80 ml-11'>
+                <p className='mt-16 text-cyan-500 text-2xl font-semibold'>
+                  We're here to help! If you have any questions or need assistance, please don't hesitate to reach out.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-        </>
-  )
+    </>
+  );
 }
 
-export default Contact
+export default Contact;
